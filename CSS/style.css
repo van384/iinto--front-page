@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/Barlow-Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 body {

@@ -1,7 +1,15 @@
+/* Import Regular and Bold Barlow fonts */
 @font-face {
   font-family: 'Barlow';
-  src: url('fonts/Barlow-Black.otf') format('opentype');
+  src: url('fonts/Barlow-Regular.otf') format('opentype');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('fonts/Barlow-Bold.otf') format('opentype');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -50,17 +58,22 @@ body {
   margin-bottom: 20px;
 }
 
+/* Headline (Bold) */
 h2 {
   font-size: 24px;
   color: #2a4a5c;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
+/* Subheading (Regular) */
 .subheading {
   color: #7b8a92;
   margin-bottom: 30px;
+  font-weight: normal;
 }
 
+/* Social Buttons Section */
 .social-buttons {
   display: flex;
   gap: 10px;
@@ -79,6 +92,13 @@ h2 {
   cursor: pointer;
   border-radius: 4px;
   color: white;
+  font-weight: bold;
+}
+
+.social-buttons svg,
+.social-buttons img {
+  width: 20px;
+  height: 20px;
 }
 
 .facebook-btn {
@@ -89,13 +109,16 @@ h2 {
   background-color: #0076b6;
 }
 
+/* Divider */
 .divider {
   text-align: center;
   margin: 20px 0;
   color: #aaa;
   font-size: 14px;
+  font-weight: normal;
 }
 
+/* Input fields */
 .input-group {
   display: flex;
   gap: 10px;
@@ -107,8 +130,12 @@ h2 {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #2a4a5c;
 }
 
+/* Investor Type Section */
 .investor-type {
   margin-bottom: 20px;
 }
@@ -116,11 +143,15 @@ h2 {
 .investor-type p {
   margin-bottom: 10px;
   font-weight: bold;
+  color: #2a4a5c;
+  font-size: 14px;
 }
 
 .investor-type label {
   margin-right: 10px;
   color: #2a4a5c;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .investor-description {
@@ -130,13 +161,16 @@ h2 {
   border-radius: 4px;
   margin-top: 10px;
   color: #444;
+  font-weight: normal;
 }
 
+/* Terms and Conditions */
 .terms {
   font-size: 12px;
   margin-bottom: 20px;
   display: block;
   color: #7b8a92;
+  font-weight: normal;
 }
 
 .terms input {
@@ -146,8 +180,10 @@ h2 {
 .terms a {
   color: #3698fb;
   text-decoration: none;
+  font-weight: bold;
 }
 
+/* Submit Button */
 .submit-btn {
   width: 100%;
   padding: 12px;
